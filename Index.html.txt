@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VELORA - Fashion Store</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-black font-sans">
+
+  <!-- Navbar -->
+  <header class="flex items-center justify-between px-8 py-6 border-b sticky top-0 bg-white/90 backdrop-blur z-50">
+    <h1 class="text-2xl font-bold tracking-widest">VELORA</h1>
+
+    <nav class="hidden md:flex gap-8 text-sm font-medium">
+      <a href="#home" class="hover:text-gray-500 transition">Home</a>
+      <a href="#collection" class="hover:text-gray-500 transition">Collection</a>
+      <a href="#about" class="hover:text-gray-500 transition">About</a>
+      <a href="#contact" class="hover:text-gray-500 transition">Contact</a>
+    </nav>
+
+    <button class="bg-black text-white px-5 py-2 rounded-full hover:scale-105 transition">
+      Shop Now
+    </button>
+  </header>
+
+  <!-- Hero Section -->
+  <section
+    id="home"
+    class="relative h-[90vh] flex items-center justify-center text-center overflow-hidden"
+  >
+    <img
+      src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1400&auto=format&fit=crop"
+      alt="Fashion"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+
+    <div class="absolute inset-0 bg-black/50"></div>
+
+    <div class="relative z-10 text-white px-6 max-w-3xl">
+      <h2 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+        Redefine Your Style
+      </h2>
+
+      <p class="text-lg md:text-xl text-gray-200 mb-8">
+        Discover premium fashion designed for confidence, comfort, and modern living.
+      </p>
+
+      <button class="bg-white text-black px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 transition">
+        Explore Collection
+      </button>
+    </div>
+  </section>
+
+  <!-- Featured Collection -->
+  <section id="collection" class="px-8 py-20 max-w-7xl mx-auto">
+
+    <div class="text-center mb-14">
+      <h3 class="text-4xl font-bold mb-4">Featured Collection</h3>
+
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Curated essentials for every wardrobe — crafted with quality fabrics and timeless style.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <!-- Product 1 -->
+      <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
+        <div class="overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1200&auto=format&fit=crop"
+            alt="Urban Oversized Hoodie"
+            class="h-80 w-full object-cover group-hover:scale-110 transition duration-500"
+          />
+        </div>
+
+        <div class="p-6">
+          <h4 class="text-xl font-semibold mb-2">Urban Oversized Hoodie</h4>
+
+          <div class="flex items-center justify-between">
+            <p class="text-gray-700 font-medium">$59</p>
+
+            <button class="bg-black text-white px-4 py-2 rounded-full text-sm hover:bg-gray-800 transition">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
+        <div class="overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1200&auto=format&fit=crop"
+            alt="Classic Denim Jacket"
+            class="h-80 w-full object-cover group-hover:scale-110 transition duration-500"
+          />
+        </div>
+
+        <div class="p-6">
+          <h4 class="text-xl font-semibold mb-2">Classic Denim Jacket</h4>
+
+          <div class="flex items-center justify-between">
+            <p class="text-gray-700 font-medium">$79</p>
+
+            <button class="bg-black text-white px-4 py-2 rounded-full text-sm hover:bg-gray-800 transition">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
+        <div class="overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=1200&auto=format&fit=crop"
+            alt="Minimal White Tee"
+            class="h-80 w-full object-cover group-hover:scale-110 transition duration-500"
+          />
+        </div>
+
+        <div class="p-6">
+          <h4 class="text-xl font-semibold mb-2">Minimal White Tee</h4>
+
+          <div class="flex items-center justify-between">
+            <p class="text-gray-700 font-medium">$29</p>
+
+            <button class="bg-black text-white px-4 py-2 rounded-full text-sm hover:bg-gray-800 transition">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
+        <div class="overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1506629905607-d9c297d4d2f9?q=80&w=1200&auto=format&fit=crop"
+            alt="Streetwear Cargo Pants"
+            class="h-80 w-full object-cover group-hover:scale-110 transition duration-500"
+          />
+        </div>
+
+        <div class="p-6">
+          <h4 class="text-xl font-semibold mb-2">Streetwear Cargo Pants</h4>
+
+          <div class="flex items-center justify-between">
+            <p class="text-gray-700 font-medium">$69</p>
+
+            <button class="bg-black text-white px-4 py-2 rounded-full text-sm hover:bg-gray-800 transition">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Promo Banner -->
+  <section class="mx-8 rounded-[2rem] bg-black text-white py-20 px-8 text-center">
+    <h3 class="text-4xl font-bold mb-4">Summer Sale Up To 50% Off</h3>
+
+    <p class="text-gray-300 mb-8 max-w-2xl mx-auto">
+      Upgrade your wardrobe with exclusive discounts on our latest arrivals.
+    </p>
+
+    <button class="bg-white text-black px-8 py-4 rounded-full font-semibold hover:scale-105 transition">
+      Shop Deals
+    </button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="px-8 py-24 max-w-6xl mx-auto grid md:grid-cols-2 gap-14 items-center">
+
+    <img
+      src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200&auto=format&fit=crop"
+      alt="About"
+      class="rounded-3xl shadow-lg h-[500px] object-cover w-full"
+    />
+
+    <div>
+      <h3 class="text-4xl font-bold mb-6">Fashion With Purpose</h3>
+
+      <p class="text-gray-600 text-lg leading-relaxed mb-6">
+        At VELORA, we combine modern aesthetics with premium craftsmanship to create timeless fashion pieces.
+      </p>
+
+      <p class="text-gray-600 text-lg leading-relaxed mb-8">
+        Sustainability and comfort remain at the heart of our designs.
+      </p>
+
+      <button class="bg-black text-white px-7 py-3 rounded-full hover:scale-105 transition">
+        Learn More
+      </button>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="bg-gray-100 py-20 px-8 text-center">
+
+    <h3 class="text-4xl font-bold mb-4">Join Our Newsletter</h3>
+
+    <p class="text-gray-600 mb-8">
+      Get updates on new arrivals, fashion tips, and exclusive offers.
+    </p>
+
+    <div class="max-w-xl mx-auto flex flex-col sm:flex-row gap-4">
+
+      <input
+        type="email"
+        placeholder="Enter your email"
+        class="flex-1 px-5 py-4 rounded-full border outline-none"
+      />
+
+      <button class="bg-black text-white px-8 py-4 rounded-full hover:bg-gray-800 transition">
+        Subscribe
+      </button>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer
+    id="contact"
+    class="bg-black text-gray-300 px-8 py-14 mt-10"
+  >
+
+    <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-10">
+
+      <div>
+        <h4 class="text-white text-2xl font-bold mb-4">VELORA</h4>
+
+        <p>
+          Premium clothing brand delivering modern streetwear and timeless essentials.
+        </p>
+      </div>
+
+      <div>
+        <h5 class="text-white font-semibold mb-4">Shop</h5>
+
+        <ul class="space-y-2">
+          <li>Men</li>
+          <li>Women</li>
+          <li>Accessories</li>
+          <li>New Arrivals</li>
+        </ul>
+      </div>
+
+      <div>
+        <h5 class="text-white font-semibold mb-4">Company</h5>
+
+        <ul class="space-y-2">
+          <li>About Us</li>
+          <li>Careers</li>
+          <li>Press</li>
+          <li>Blog</li>
+        </ul>
+      </div>
+
+      <div>
+        <h5 class="text-white font-semibold mb-4">Contact</h5>
+
+        <ul class="space-y-2">
+          <li>support@velora.com</li>
+          <li>+1 234 567 890</li>
+          <li>Instagram</li>
+          <li>Twitter</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="border-t border-gray-800 mt-12 pt-6 text-center text-sm">
+      © 2026 VELORA. All rights reserved.
+    </div>
+
+  </footer>
+
+</body>
+</html>
